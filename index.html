@@ -25,6 +25,10 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 </style>
 <body>
 
@@ -92,6 +96,12 @@ tr:nth-child(even) {
 	    <th>Vulnerable (Agent Count)</th>
 	  </tr>
 	  <tr>
+	    <td>0%</td>
+	    <td>9640</td>
+	    <td>0</td>
+	    <td>360</td>
+	  </tr>
+	  <tr>
 	    <td>50%</td>
 	    <td>4640</td>
 	    <td>5000</td>
@@ -118,17 +128,36 @@ tr:nth-child(even) {
     <p>This trial represents a population where no agent is immune to the disease. In figure 1 it is shown that the infected proportion of agents reached 100% within 250 ticks. The graph of the diseased proportion shows an exponential to logarithmic growth as the disease proportion increases, allowing it to infect faster, then transitioning into a logarithmic growth as less agents are susceptible.
     </p>
     <center>
-	<div style="width: 100%; overflow: hidden;">
+	<div class="flex-wrap" style="width: 100%; overflow: hidden;">
 	  <div style="width: 600px; float: left;">
 	  	<img src="cobweb1.gif" alt="Figure-1" style="width:656px;height:422px; margin-top:15px;">
 	  	<p style="margin-left:15px; font-size:20px;">
-			Figure 2. Graph of the infected within each vulnerable population with a global immunization rate of 0%. 
+			Figure 1. COBWEB agent map of a population at 0% immunization against the disease after 250 ticks. As all agents show a blue background, all agents are infected.
 		</p>
 	  </div>
 	  <div style="margin-left: 620px; ">
 	  	<img src="graph1.gif" alt="Figure-1" style="width:656px;height:422px; margin-top:15px; margin-left:15px;">
 		<p style="margin-left:125px;margin-right:125px; font-size:20px;">
 			Figure 2. Graph of the infected within each vulnerable population with a global immunization rate of 0%. 
+		</p>
+	  </div>
+	</div>
+	</center>
+	<p>
+		In the simulation for a population with a 50% immunity rate it was shown that X% of the un-immunized and vulnerable population was infected with the disease after 3000 ticks. The agent map in figure 3 shows a large proportion of infected agents throughout the entire simulated environment. The graph of the diseased proportion shows a logarithmic growth as the diseased proportion increases.  
+	</p>
+	<center>
+	<div class="flex-wrap" style="width: 100%; overflow: hidden;">
+	  <div style="width: 600px; float: left;">
+	  	<img src="cobweb1-50.gif" alt="Figure-1" style="width:656px;height:422px; margin-top:15px;">
+	  	<p style="margin-left:15px; font-size:20px;">
+			Figure 3: COBWEB agent map of a population at 50% immunization against the disease with the path of infection visualized in red.
+		</p>
+	  </div>
+	  <div style="margin-left: 620px; ">
+	  	<img src="graph1-50.gif" alt="Figure-1" style="width:656px;height:422px; margin-top:15px; margin-left:15px;">
+		<p style="margin-left:125px;margin-right:125px; font-size:20px;">
+			Figure 4: Graph of the infected within each vulnerable population with a global immunization rate of 50%.
 		</p>
 	  </div>
 	</div>
