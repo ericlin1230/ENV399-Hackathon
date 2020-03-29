@@ -42,7 +42,7 @@ tr:nth-child(even) {
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="#Introduction" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
-    <a href="#Initial" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Initial Setup</a> 
+    <a href="#Initial" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Vaccination</a> 
     <a href="#Results" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Results</a> 
     <a href="#COVID-19" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">COVID-19 Model</a> 
     <a href="#Contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
@@ -66,28 +66,25 @@ tr:nth-child(even) {
     <h1 class="w3-jumbo"><b>COVID-19 Simulation in COBWEB</b></h1>
     <h1 class="el-subtitle"><b>A Model by Eric Lin & Haoying Shen</b></h1>
     <h1 class="w3-xxxlarge w3-text-red2"><b>Introduction.</b></h1>
-    <p>
-    Complexity and Organized Behavior within Environmental Bounds (<a href="http://cobweb.ca/">COBWEB</a>), an agent-based simulation software, was used to model the general population. COBWEB is a software package that can be used to develop many types of simulations. The simulation is visual and is displayed on a 2D grid. As COBWEB is agent based, the agents usually go around as designed, and could be simulated as an individual in the society, thus having the ability to transmit diseases within the population. Tick is a measurement of time in COBWEB, counted for every time the grid changes, and each tick allows agents to perform a single action. 
+	<p>
+		Complexity and Organized Behavior within Environmental Bounds (<a href="http://cobweb.ca/">COBWEB</a>), an agent-based simulation software created by our professor, Brad Bass PhD. of the University of Toronto. COBWEB is a software package that can be used to develop many types of simulations. The simulation is visual and is displayed on a 2D grid. As COBWEB is agent based, the agents are programmed to perform individual actions, and are considered an individual intelligence or existance in an environment. This allows for the representation of disease transmission within a simulated environment.
 	</p>
 	<p>
-	Agents are one of the main components of COBWEB. Their “brains” are set to follow different pre-set methods that determine movement and consumption. Each type of agent also has their own settings that the users can modify to control energy consumption.  Agents require energy, without energy they will not be able to survive. There are multiple settings in agents related to energy. Agents are represented by triangles in COBWEB. Different agents have different colour dots in the center to indicate agent type. The agents roam around the map.
-	</p>
-	<p>
-	Resources are another main component in COBWEB. Agents feed on these foods for energy. As mentioned in the Agents section, without energy agents will not survive, and resources provide the agents’ energy.  The energy provided by the food is set in the agents’ settings. The resources are represented by squares and the colour of the squares indicate the agent for which the square is a favorite food.
+		Using this software, we used COBWEB to simulate the spread of COVID-19 throughout an artificial environment. We used COBWEB to look for relationships between the rate of transmission at certain levels of population immunity as well as the effect that social distancing will have on the transmission of this disease. We believe that this model is a holistic and simple way of visualizing and educating individuals on the importance of social distancing for COVID-19 and also the importance of actually receiving the vaccine once it is released, and support the integrity of public health.
 	</p>
   </div>
 
   <!-- Services -->
   <div class="w3-container" id="Initial" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red2"><b>Initial Setup - Testing of Herd Immunity.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red2"><b>Illustrating the importance of vaccination once it is developed</b></h1>
     <p>
-    In the initial model of testing for herd immunity, a 100×100grid is set up.  The grid was filled with agents with different proportions of each type between trials. There were no resources presented within the model as it was assumed the agents, which are representing the population, already receive adequate food.  There was also no energy consumption and reproduction either, as the focus was strictly on disease transmission.
+    	In our model a 100×100 grid environment is created. The grid was filled with agents with different proportions of each type between trials. Although COBWEB allows for resources for AGENTS there were no resources presented within our model as it was assumed the agents, which are representing the population, already receive adequate food and other resources. There was also no energy consumption and reproduction either, as the focus was strictly on disease transmission.
     </p>
     <p>
-    The initial grid was set up to be filled completely with agents. Agents were refrained from dying through disease as the recent outbreak of COVID-19 was shown to have a long incubation period and allowed the transmission before displaying symptoms, and could last up to 14 days, thus how the disease spreads has been a huge interest among the disease control researchers. The agents are divided into three types, the unvaccinated, the vaccinated, and the vulnerable individuals.  The unvaccinated individuals start with a 1% chance to carry the disease, through contact with adjacent agents that are either unvaccinated or vulnerable, they have certain chances to pass on the disease. The vaccinated individuals have absolutely no chance of being infected, thus this model is to test how the proportion of vaccinated individuals affect the number of infected.
+    	The initial grid was set up to be filled completely with agents. Agents were refrained from dying through disease as the recent outbreak of COVID-19 was shown to have a long incubation period and allowed the transmission before displaying symptoms, and could last up to 14 days, thus how the disease spreads has been a huge interest among the disease control researchers. The agents are divided into three types, the unvaccinated, the vaccinated, and the vulnerable individuals. Vulnerable individuals are ones who cannot be vaccinated due to various medical issues; these individuals are considered immunocompromised. The unvaccinated individuals start with a 1% chance to carry the disease, through contact with adjacent agents that are either unvaccinated or vulnerable, they have certain chances to pass on the disease. The vaccinated individuals have absolutely no chance of being infected, thus this model is to test how the proportion of vaccinated individuals affect the number of infected over time.
     </p>
 	<p>
-	Three models were set up for the initial testing of herd immunity models, with vaccination of 50%, 75% and 95%. The vulnerable will make up 3.6% of the agents as it is reported the immunocompromised are approximately 3.6% among the general population. With the grid set up as 100×100,there are a total of 10,000 grids for agents to occupy, table 1 shows the initial setups for each trial.
+		Three models were set up for the initial testing of herd immunity models, with vaccination of 50%, 75% and 95%. The vulnerable will make up 3.6% of the agents as it is reported the immunocompromised are approximately 3.6% among the general population. With the grid set up as 100×100,there are a total of 10,000 grids for agents to occupy, table 1 shows the initial setups for each trial.
 	</p>
 	<table>
 	  <tr>
@@ -121,17 +118,10 @@ tr:nth-child(even) {
 	    <td>360</td>
 	  </tr>
 	</table>
-  </div>
-
-  <!-- Results -->
-  <div class="w3-container" id="Results" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red2"><b>Results.</b></h1>
-    <p>This trial represents a population where no agent is immune to the disease. In figure 1 it is shown that the infected proportion of agents reached 100% within 250 ticks. The graph of the diseased proportion shows an exponential to logarithmic growth as the disease proportion increases, allowing it to infect faster, then transitioning into a logarithmic growth as less agents are susceptible.
-    </p>
-    <center>
+	<center>
 	<div class="flex-wrap" style="width: 100%; overflow: hidden;">
 	  <div style="width: 600px; float: left;">
-	  	<img src="cobweb1.gif" alt="Figure-1" style="width:656px;height:422px; margin-top:15px;">
+	  	<img src="cobweb1.gif" alt="Figure-c1" style="width:656px;height:422px; margin-top:15px;">
 	  	<p style="margin-left:15px; font-size:20px;">
 			Figure 1. COBWEB agent map of a population at 0% immunization against COVID-19. As all agents show a blue background after the simulation has run, all agents are infected.
 		</p>
@@ -144,25 +134,52 @@ tr:nth-child(even) {
 	  </div>
 	</div>
 	</center>
-	<p>
-		In the simulation for a population with a 50% immunity rate it was shown that X% of the un-immunized and vulnerable population was infected with the disease after 3000 ticks. The agent map in figure 3 shows a large proportion of infected agents throughout the entire simulated environment. The graph of the diseased proportion shows a logarithmic growth as the diseased proportion increases.  
-	</p>
 	<center>
 	<div class="flex-wrap" style="width: 100%; overflow: hidden;">
 	  <div style="width: 600px; float: left;">
-	  	<img src="cobweb1-50.gif" alt="Figure-1" style="width:656px;height:422px; margin-top:15px;">
+	  	<img src="cobweb1-50.gif" alt="Figure-c50" style="width:656px;height:422px; margin-top:15px;">
 	  	<p style="margin-left:15px; font-size:20px;">
 			Figure 3: COBWEB agent map of a population at 50% immunization against the disease with the path of infection visualized in red.
 		</p>
 	  </div>
 	  <div style="margin-left: 620px; ">
-	  	<img src="graph1-50.gif" alt="Figure-1" style="width:656px;height:422px; margin-top:15px; margin-left:15px;">
+	  	<img src="graph1-50.gif" alt="Figure-50" style="width:656px;height:422px; margin-top:15px; margin-left:15px;">
 		<p style="margin-left:125px;margin-right:125px; font-size:20px;">
 			Figure 4: Graph of the infected within each vulnerable population with a global immunization rate of 50%.
 		</p>
 	  </div>
 	</div>
 	</center>
+	<center>
+	<div class="flex-wrap" style="width: 100%; overflow: hidden;">
+	  <div style="width: 600px; float: left;">
+	  	<img src="graph1-75.gif" alt="Figure-75" style="width:656px;height:422px; margin-top:15px;">
+	  	<p style="margin-left:15px; font-size:20px;">
+			Figure 5: Graph of the infected within each vulnerable population with a global immunization rate of 75%.
+		</p>
+	  </div>
+	  <div style="margin-left: 620px; ">
+	  	<img src="graph1-95.gif" alt="Figure-95" style="width:656px;height:422px; margin-top:15px; margin-left:15px;">
+		<p style="margin-left:125px;margin-right:125px; font-size:20px;">
+			Figure 6: Graph of the infected within each vulnerable population with a global immunization rate of 95%.
+		</p>
+	  </div>
+	</div>
+	</center>
+	<p>
+		The simulations show that as there are more vaccinated individuals in the simulation a smaller percentage of the unvaccinated/ vulnerable actually come into contact with the virus. We can also see that in the 95% vaccinated population there is no change in the infected population as immune agents surround the infected and essentially form a barrier. This trend illustrates herd immunity, where enough of the population is immune such that a virus cannot properly transmit through a population.
+	</p>
+  </div>
+
+  <!-- Results -->
+  <div class="w3-container" id="Results" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red2"><b>Results.</b></h1>
+    <p>This trial represents a population where no agent is immune to the disease. In figure 1 it is shown that the infected proportion of agents reached 100% within 250 ticks. The graph of the diseased proportion shows an exponential to logarithmic growth as the disease proportion increases, allowing it to infect faster, then transitioning into a logarithmic growth as less agents are susceptible.
+    </p>
+    
+	<p>
+		In the simulation for a population with a 50% immunity rate it was shown that X% of the un-immunized and vulnerable population was infected with the disease after 3000 ticks. The agent map in figure 3 shows a large proportion of infected agents throughout the entire simulated environment. The graph of the diseased proportion shows a logarithmic growth as the diseased proportion increases.  
+	</p>
     <p><b>Our designers are thoughtfully chosen</b>:</p>
   </div>
 
