@@ -43,7 +43,7 @@ tr:nth-child(even) {
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="#Introduction" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
     <a href="#Initial" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Vaccination</a> 
-    <a href="#Results" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Results</a> 
+    <a href="#Results" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Social Distancing</a> 
     <a href="#COVID-19" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">COVID-19 Model</a> 
     <a href="#Contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
   </div>
@@ -139,7 +139,7 @@ tr:nth-child(even) {
 	  <div style="width: 600px; float: left;">
 	  	<img src="cobweb1-50.gif" alt="Figure-c50" style="width:656px;height:422px; margin-top:15px;">
 	  	<p style="margin-left:15px; font-size:20px;">
-			Figure 3: COBWEB agent map of a population at 50% immunization against the disease with the path of infection visualized in red.
+			Figure 3: COBWEB agent map of a population at 50% immunization against COVID-19. The path of transmission is visualized in blue.
 		</p>
 	  </div>
 	  <div style="margin-left: 620px; ">
@@ -173,14 +173,106 @@ tr:nth-child(even) {
 
   <!-- Results -->
   <div class="w3-container" id="Results" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red2"><b>Results.</b></h1>
-    <p>This trial represents a population where no agent is immune to the disease. In figure 1 it is shown that the infected proportion of agents reached 100% within 250 ticks. The graph of the diseased proportion shows an exponential to logarithmic growth as the disease proportion increases, allowing it to infect faster, then transitioning into a logarithmic growth as less agents are susceptible.
+    <h1 class="w3-xxxlarge w3-text-red2"><b>Portraying the importance of social distancing and self isolation.</b></h1>
+    <p>
+    	Again we create a 100x100 environment in COBWEB this time we include stones, which is a feature of COBWEB that introduces a barrier that agents cannot pass through. These stones will be randomly generated. We generated the stones based on a percentage of the total number of spaces allocated to the simulation which is at maximum 10000. 
     </p>
-    
-	<p>
-		In the simulation for a population with a 50% immunity rate it was shown that X% of the un-immunized and vulnerable population was infected with the disease after 3000 ticks. The agent map in figure 3 shows a large proportion of infected agents throughout the entire simulated environment. The graph of the diseased proportion shows a logarithmic growth as the diseased proportion increases.  
-	</p>
-    <p><b>Our designers are thoughtfully chosen</b>:</p>
+    <table>
+	  <tr>
+	    <th>Model (Stone Density)</th>
+	    <th>Agent Count</th>
+	    <th>Initially Infected %</th>
+	    <th>Number of Stones</th>
+	  </tr>
+	  <tr>
+	    <td>0%</td>
+	    <td>10000</td>
+	    <td>1%</td>
+	    <td>0</td>
+	  </tr>
+	  <tr>
+	    <td>30%</td>
+	    <td>7000</td>
+	    <td>1%</td>
+	    <td>3000</td>
+	  </tr>
+	  <tr>
+	    <td>40%</td>
+	    <td>6000</td>
+	    <td>1%</td>
+	    <td>4000</td>
+	  </tr>
+	  <tr>
+	    <td>50%</td>
+	    <td>5000</td>
+	    <td>1%</td>
+	    <td>5000</td>
+	  </tr>
+	</table>
+    <center>
+	<div class="flex-wrap" style="width: 100%; overflow: hidden;">
+	  <div style="width: 600px; float: left;">
+	  	<img src="0stone.gif" alt="Figure-75" style="width:656px;height:422px; margin-top:15px;">
+	  	<p style="margin-left:15px; font-size:20px;">
+			Figure 7: COBWEB agent map with a stone density of 0%. The path of transmission is visualized in blue.
+		</p>
+	  </div>
+	  <div style="margin-left: 620px; ">
+	  	<img src="0graph.gif" alt="Figure-95" style="width:656px;height:422px; margin-top:15px; margin-left:15px;">
+		<p style="margin-left:125px;margin-right:125px; font-size:20px;">
+			Figure 8: Graph of percent infected in an environment with 0% stone density.
+		</p>
+	  </div>
+	</div>
+	</center>
+	<center>
+	<div class="flex-wrap" style="width: 100%; overflow: hidden;">
+	  <div style="width: 600px; float: left;">
+	  	<img src="30stone.gif" alt="Figure-75" style="width:656px;height:422px; margin-top:15px;">
+	  	<p style="margin-left:15px; font-size:20px;">
+			Figure 9: COBWEB agent map with a stone density of 30%. The path of transmission is visualized in blue.
+		</p>
+	  </div>
+	  <div style="margin-left: 620px; ">
+	  	<img src="30graph.gif" alt="Figure-95" style="width:656px;height:422px; margin-top:15px; margin-left:15px;">
+		<p style="margin-left:125px;margin-right:125px; font-size:20px;">
+			Figure 10: Graph of percent infected in an environment with 30% stone density.
+		</p>
+	  </div>
+	</div>
+	</center>
+	<center>
+	<div class="flex-wrap" style="width: 100%; overflow: hidden;">
+	  <div style="width: 600px; float: left;">
+	  	<img src="40stone.gif" alt="Figure-75" style="width:656px;height:422px; margin-top:15px;">
+	  	<p style="margin-left:15px; font-size:20px;">
+			Figure 11: COBWEB agent map with a stone density of 40%. The path of transmission is visualized in blue.
+		</p>
+	  </div>
+	  <div style="margin-left: 620px; ">
+	  	<img src="40graph.gif" alt="Figure-95" style="width:656px;height:422px; margin-top:15px; margin-left:15px;">
+		<p style="margin-left:125px;margin-right:125px; font-size:20px;">
+			Figure 12: Graph of percent infected in an environment with 40% stone density.
+		</p>
+	  </div>
+	</div>
+	</center>
+	<center>
+	<div class="flex-wrap" style="width: 100%; overflow: hidden;">
+	  <div style="width: 600px; float: left;">
+	  	<img src="50stone.gif" alt="Figure-75" style="width:656px;height:422px; margin-top:15px;">
+	  	<p style="margin-left:15px; font-size:20px;">
+			Figure 13: COBWEB agent map with a stone density of 50%. The path of transmission is visualized in blue.
+		</p>
+	  </div>
+	  <div style="margin-left: 620px; ">
+	  	<img src="50graph.gif" alt="Figure-95" style="width:656px;height:422px; margin-top:15px; margin-left:15px;">
+		<p style="margin-left:125px;margin-right:125px; font-size:20px;">
+			Figure 14: Graph of percent infected in an environment with 50% stone density.
+		</p>
+	  </div>
+	</div>
+	</center>
   </div>
 
   <!-- Packages / Pricing Tables -->
@@ -279,6 +371,7 @@ tr:nth-child(even) {
           <p class="w3-opacity">Research Student at University of Toronto</p>
           <p>Health & Disease/Statistics Double Major</p>
           <p>Email: <a href="mailto:haoying.shen@mail.utoronto.ca">haoying.shen@mail.utoronto.ca</a></p>
+          <p><a href="https://www.linkedin.com/in/haoying-shen-2a6b871a5/">Linkedin</a></p>
         </div>
       </div>
     </div>
