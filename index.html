@@ -67,7 +67,7 @@ tr:nth-child(even) {
     <h1 class="el-subtitle"><b>A Model by Eric Lin & Haoying Shen</b></h1>
     <h1 class="w3-xxxlarge w3-text-red2"><b>Introduction.</b></h1>
 	<p>
-		Complexity and Organized Behavior within Environmental Bounds (<a href="http://cobweb.ca/">COBWEB</a>), is an open-source simulation program that is agent based. Allowing for the creation of many different types of simulations across all disciplines. The simulation is visual and is displayed on a 2D grid. As COBWEB is agent based, the agents are programmed to perform individual actions, and are considered an individual intelligence or existance in an environment. This allows for the representation of disease transmission within a simulated environment.
+		Complexity and Organized Behavior within Environmental Bounds (<a href="http://cobweb.ca/">COBWEB</a>), is an open-source agent-based simulation. The general nature of COBWEB allows for the creation of many different types of simulations across all disciplines. The simulation is visual and is displayed on a 2D grid. As COBWEB is agent based, the simulations are built from the bottom up using individual agents or agent types as components of a system. Agents are programmed to perform individual actions, and are considered to be an individual intelligence or existance in an environment. This allows for the representation of disease transmission within a simulated environment.
 	</p>
 	<p>
 		Using this software, we used COBWEB to simulate the spread of COVID-19 throughout an artificial environment. We used COBWEB to look for relationships between the rate of transmission at certain levels of population immunity as well as the effect that social distancing will have on the transmission of this disease. We believe that this model is a holistic and simple way of visualizing and educating individuals on the importance of social distancing for COVID-19 and also the importance of actually receiving the vaccine once it is released, and support the integrity of public health.
@@ -78,10 +78,10 @@ tr:nth-child(even) {
   <div class="w3-container" id="Initial" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red2"><b>Illustrating the importance of vaccination once it is developed</b></h1>
     <p>
-    	In our model a 100×100 grid environment is created. The grid was filled with agents with different proportions of each type between trials. Although COBWEB allows for resources for AGENTS there were no resources presented within our model as it was assumed the agents, which are representing the population, already receive adequate food and other resources. There was also no energy consumption and reproduction either, as the focus was strictly on disease transmission.
+    	In our model a 100×100 grid environment is created. The grid was filled with agents so the disease can transmit quickly. To keep the model simple, it was assumed the agents, which are representing the population, already receive adequate food and other resources. The agents did not consume energy or reproduce to keep the focus was strictly on disease transmission.
     </p>
     <p>
-    	The initial grid was set up to be filled completely with agents. Agents were refrained from dying through disease as the recent outbreak of COVID-19 was shown to have a long incubation period and allowed the transmission before displaying symptoms, and could last up to 14 days, thus how the disease spreads has been a huge interest among the disease control researchers. The agents are divided into three types, the unvaccinated, the vaccinated, and the vulnerable individuals. Vulnerable individuals are ones who cannot be vaccinated due to various medical issues; these individuals are considered immunocompromised. The unvaccinated individuals start with a 1% chance to carry the disease, through contact with adjacent agents that are either unvaccinated or vulnerable, they have certain chances to pass on the disease. The vaccinated individuals have absolutely no chance of being infected, thus this model is to test how the proportion of vaccinated individuals affect the number of infected over time.
+    	The initial grid was set up to be filled completely with agents. Agents were not allowed to die through disease as the recent outbreak of COVID-19 was shown to have a long incubation period, transmission can occur before displaying symptoms, and the incubation could last up to 14 days. The agents are divided into three types, the unvaccinated, the vaccinated, and the vulnerable individuals. Vulnerable individuals are ones who cannot be vaccinated due to various medical issues; these individuals are considered immunocompromised. The unvaccinated individuals start with a 1% chance to carry the disease. Through contact with adjacent agents that are either unvaccinated or vulnerable, they have a chance to pass on the disease that is defined by the user. The vaccinated individuals have absolutely no chance of being infected. This model will simulate how the proportion of vaccinated individuals affect the number of infected individuals over time, and indicate whether herd immunity can develop without a 100% vaccination rate.
     </p>
 	<p>
 		Three models were set up for the initial testing of herd immunity models, with vaccination of 50%, 75% and 95%. The vulnerable will make up 3.6% of the agents as it is reported the immunocompromised are approximately 3.6% among the general population. With the grid set up as 100×100,there are a total of 10,000 grids for agents to occupy, table 1 shows the initial setups for each trial.
@@ -274,7 +274,7 @@ tr:nth-child(even) {
 	</div>
 	</center>
 	<p>
-		As we are solely looking towards the effect of isolation and distancing, the vulnerable agent was not necessary to illustrate the relationship. This simulation is much more consistent with current events without a vaccine. The stones will artificially limit the contact between agents. We can begin to observe large communities of agents that are protected as a result of the isolation in the 40% stone density. And in the 50% stone density the virus has been isolated to remote areas. Although the 30% stone density model still has a majority of individuals infected, the rate of infection is much lower in all simulations in comparison to the 0% infected.
+		As we are solely looking at the effects of isolation and distancing, the vulnerable agent was not necessary to illustrate the relationship between these preventative measures and the rate of infection. This simulation is much more consistent with current infection rates. The barriers will artificially limit the contact between agents. We begin to observe large communities of agents that are protected as a result of the isolation in the 40% barrier density. At a barrier density of 50%. the virus has been isolated to small areas spread throughout the grid and the a majority of the population is protected. Although at a 30% barrier density, a majority of individuals are infected, the rate of infection is much lower in all simulations in comparison to the base case without barriers.
 	</p>
   </div>
 
@@ -282,7 +282,7 @@ tr:nth-child(even) {
   <div class="w3-container" id="Importance" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red2"><b>Importance.</b></h1>
     <p>
-    	Our model illustrates the power of COBWEB in simulating many aspects of the virus. We believe that this model will be highly useful in educating individuals during this time of crisis on the basics of why vaccination is important and also the importance of social distancing/isolation.
+    	Our model illustrates the power of COBWEB in simulating many aspects of the virus. We believe that this model will be highly useful in comparing the effect of different measures on the rate of infection and in educating individuals  on the importance of social distancing/isolation, and when it is available, why vaccination is important.
     </p>
   </div>
 
